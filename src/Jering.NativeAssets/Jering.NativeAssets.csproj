@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+      <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netstandard2.0</TargetFrameworks>
+      <PackageId>Jering.NativeAssets</PackageId>
+      <Authors>JeremyTCD</Authors>
+      <Title>TODO</Title>
+      <Description>TODO</Description>
+      <Copyright>© 2018-2020 Jering. All rights reserved.</Copyright>
+      <PackageProjectUrl>https://www.jering.tech/utilities/jering.NativeAssets/index</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/JeringTech/NativeAssets</RepositoryUrl>
+      <PackageLicenseUrl>$(RepositoryUrl)/blob/master/License.md</PackageLicenseUrl>
+      <PackageReleaseNotes>$(RepositoryUrl)/blob/master/Changelog.md</PackageReleaseNotes>
+      <PackageTags>exe runtime native assets</PackageTags>
+      <PublishRepositoryUrl>true</PublishRepositoryUrl>
+      <EmbedUntrackedSources>true</EmbedUntrackedSources>
+      <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+      <RepositoryType>git</RepositoryType>
+      <LangVersion>8</LangVersion>
+      <GenerateDocumentationFile>true</GenerateDocumentationFile>
+      <PackageIconUrl>https://raw.githubusercontent.com/JeringTech/NativeAssets/master/nuget_icon.png</PackageIconUrl>
+      <CodeAnalysisRuleSet>../../Jering.NativeAssets.ruleset</CodeAnalysisRuleSet>
+      <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+      <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+      <AssemblyOriginatorKeyFile>../../keypair.snk</AssemblyOriginatorKeyFile>
+      <SignAssembly>true</SignAssembly>
+      <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Roslynator.Analyzers" Version="2.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

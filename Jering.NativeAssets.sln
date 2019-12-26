@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43C04F61-1E07-4ED7-B3B6-F14DBA05CFE4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		azure-pipelines.yml = azure-pipelines.yml
+		Changelog.md = Changelog.md
+		codecov.yml = codecov.yml
+		Jering.NativeAssets.ruleset = Jering.NativeAssets.ruleset
+		License.md = License.md
+		NuGet.Config = NuGet.Config
+		nuget_icon.png = nuget_icon.png
+		ReadMe.md = ReadMe.md
+		ThirdPartyLicenses.md = ThirdPartyLicenses.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jering.NativeAssets", "src\Jering.NativeAssets\Jering.NativeAssets.csproj", "{7DF8906E-7E5E-454C-A673-AEBB64B3009A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jering.NativeAssets.Tests", "test\Jering.NativeAssets.Tests\Jering.NativeAssets.Tests.csproj", "{9680AC37-FBC0-4D39-ADC7-4BFCB089D952}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jering.NativeAssets.Performance", "perf\Jering.NativeAssets.Performance\Jering.NativeAssets.Performance.csproj", "{22AF828C-7748-42D7-A597-AE3C7BD3BE31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DF8906E-7E5E-454C-A673-AEBB64B3009A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF8906E-7E5E-454C-A673-AEBB64B3009A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF8906E-7E5E-454C-A673-AEBB64B3009A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF8906E-7E5E-454C-A673-AEBB64B3009A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9680AC37-FBC0-4D39-ADC7-4BFCB089D952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9680AC37-FBC0-4D39-ADC7-4BFCB089D952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9680AC37-FBC0-4D39-ADC7-4BFCB089D952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9680AC37-FBC0-4D39-ADC7-4BFCB089D952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22AF828C-7748-42D7-A597-AE3C7BD3BE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22AF828C-7748-42D7-A597-AE3C7BD3BE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22AF828C-7748-42D7-A597-AE3C7BD3BE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22AF828C-7748-42D7-A597-AE3C7BD3BE31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E6CBA40-A843-4C95-B1BA-B616D0FFE675}
+	EndGlobalSection
+EndGlobal
